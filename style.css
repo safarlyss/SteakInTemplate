@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: rgba(27, 26, 26, 0.75);
+}
+
+#header {
+    background: url('assets/img/1.jpg') no-repeat fixed;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+    background-color: rgba(27, 26, 26, 0.75);
+
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+#header::before {
+    background-color: rgba(27, 26, 26, 0.75);
+}
+
+.container-header a {
+    padding: 20px;
+}
+
+.dropdown ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100px;
+    color: white;
+    padding: 0;
+}
+
+.dropdown ul li .page:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #bb9356;
+    border-bottom: 2px solid #bb9356;
+}
+
+.book {
+    border: 1px solid #bb9356;
+    background-color: #bb9356;
+    letter-spacing: 0.26px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 37px;
+    height: 25px;
+}
+
+.book:hover {
+    cursor: pointer;
+    color: #bb9356;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.shopping-card {
+    margin-left: 70px;
+    margin-bottom: 30px;
+    font-size: 13px;
+
+}
+
+.search {
+    margin-right: 50px;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.bar {
+    margin-bottom: 30px;
+    margin-right: 50px;
+    font-size: 13px;
+}
+
+.title-subtitle {
+    color: #bb9356;
+    font-family: 'Ruthie', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.title-heading h1 {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 0;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.breadcrumb-item {
+    font-size: 14px;
+    /* font-weight: 400; */
+    line-height: 1;
+    background: transparent;
+    color: #f9f9f9;
+
+}
+.breadcrumb nav ol  {
+     margin-bottom:30px; 
+}
+
+.breadcrumb ol li a:hover {
+    color: #bb9356;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.title-heading {
+    margin-bottom: 100px;
+}
+.title-subtitle {
+   margin-top: 140px;
+}
