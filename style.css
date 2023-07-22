@@ -20,7 +20,7 @@ body {
 
 #header::before {
     background-color: rgba(27, 26, 26, 0.75);
-    
+
     background-image: linear-gradient(180deg, rgba(27, 26, 26, 0.75) 0%, rgba(27, 26, 26, 0) 34%, rgba(27, 26, 26, 0) 82%, rgba(27, 26, 26, 0) 100%);
 }
 
@@ -403,7 +403,7 @@ footer .fa {
 #reservation .reservation-desc {
     font-size: 14px;
     font-weight: 400;
-     padding: 0 150px !important;  
+     padding: 0 150px !important;
     margin-bottom: 50px;
     color: #a5a5a5;
     line-height: 1.5;
@@ -441,7 +441,7 @@ footer .fa {
     font-size: 13px;
     font-weight: 400;
     border-radius: 2px;
-    box-shadow: none; 
+    box-shadow: none;
     height: 49px;
     display: block;
     width: 60%;
@@ -506,15 +506,15 @@ text-decoration: none;
 }
 #testimonials{
     background-image: url('assets/img/background.jpg');
-    
+
 }
 .divider--shape-1up{
     width: 124px;
     height: 13px;
     background: url('assets/img/arrow-up.png') center no-repeat;
     position: absolute;
-     left: 50%; 
-     margin-left: -62px; 
+     left: 50%;
+     margin-left: -62px;
 }
 
 #testimonials .testimonial-img{
@@ -564,11 +564,11 @@ text-decoration: none;
     padding-right: 15px;
     padding-left: 15px;
      margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
 #banner6 .row{
      margin-right: -15px;
-    margin-left: -15px; 
+    margin-left: -15px;
 }
 #banner .row::before{
     display: table;
@@ -679,10 +679,10 @@ text-decoration: none;
 }
 .divider--shape-4{
     width: 100%;
-     height: 16px; 
+     height: 16px;
     background: url('assets/img/shape-4.png') center no-repeat;
      margin-bottom: 25px;
-    margin-top: 22px; 
+    margin-top: 22px;
 }
 #skills .heading .heading-desc {
     font-family: 'Poppins', sans-serif;
@@ -738,4 +738,93 @@ text-decoration: none;
     background-color: #bb9356;
     border-radius: 0;
     box-shadow: none;
+}
+/* MENU-GALLERY */
+#page-title {
+    background: url('assets/img/menugalery.jpg') 50% 0 no-repeat fixed;
+}
+
+
+#menugallery ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}
+#menugallery ul li {
+    float: none;
+    display: inline-block;
+    margin: 20px 11px;
+}
+#menugallery ul li a{
+    padding: 0 0 7px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+}
+#menugallery ul li .page:hover{
+color: #bb9356;
+border-bottom: 2px solid #bb9356;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+#menugallery ul li .active{
+    color: #bb9356;
+    border-bottom: 2px solid #bb9356;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#menugallery .dish-img{
+    margin-bottom: 20px;
+    position: relative;
+    vertical-align: middle;
+    border: 0;
+    overflow: clip;
+  
+}
+#menugallery .dish-tag{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 3px 6px;
+    background-color: #bb9356;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+#menugallery .dish-content .dish-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 0;
+    float: left;
+}
+#menugallery .dish-content .dish-price {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #bb9356;
+    text-align: right;
+}
+#menugallery .dish-content .dish-desc {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #a5a5a5;
+    margin-bottom: 0;
+    /* margin: 0 0 10px; */
+    display: block;
+    float:left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
