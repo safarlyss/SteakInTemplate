@@ -544,6 +544,13 @@ footer .fa {
     letter-spacing: 0.28px;
     margin-left: 100px;
 }
+#reservation form .form #date{
+    margin-left: -80px;
+}
+#reservation form .form #time{
+    margin-left: -150px;
+}
+
 #reservation .button button:hover{
     cursor: pointer;
     background-color: #bb9356;
@@ -637,12 +644,14 @@ text-decoration: none;
 #banner6 .banner-panel .banner-img{
     margin-bottom: 28px;
     position: relative;
-    max-width:100%;
-    height: auto;
     vertical-align: middle;
     border: 0;
 }
-
+#banner6 .banner-panel .banner-img img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
 #banner6 .banner-panel .banner-img::after{
     position: absolute;
     content: "";
