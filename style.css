@@ -683,6 +683,12 @@ text-decoration: none;
     overflow: hidden;
     vertical-align: middle;
 }
+#team .member-img img{
+    transition: all 0.35s;
+}
+#team .member:hover .member-img img{
+    transform: scale(1.1);
+}
 #team .member-overlay{
     position: absolute;
     width: 100%;
