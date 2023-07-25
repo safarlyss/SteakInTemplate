@@ -337,7 +337,11 @@ header .home-content .slider:hover .home-contentt{
 footer {
     background-color: #222222
 }
-
+footer .footer-icons .fa:hover{
+    background-color: #bb9356;
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
 footer .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
