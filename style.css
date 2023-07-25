@@ -910,6 +910,20 @@ text-decoration: none;
     font-weight: 400;
     margin-right: 10px;
     display: inline-block;
+
+}
+#menugallery .dish-overlay:hover:before {
+    transform: scale(1);
+}
+#menugallery .dish-overlay::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .3s linear;
 }
 #menugallery .fa{
     font: normal normal normal 14px/1 FontAwesome;
@@ -918,6 +932,19 @@ text-decoration: none;
     -webkit-font-smoothing: antialiased;
     margin-top: 50%;
     color: #ffffff;
+}
+#menugallery .dish-hover i {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    /* top: 50%; */
+    transform: translate(0px, -50%);
+    left: 0;
+    right: 0;
+}
+#menugallery .fa-search-plus:before {
+    content: "\f00e";
 }
 #menugallery ul {
     padding-left: 0;
