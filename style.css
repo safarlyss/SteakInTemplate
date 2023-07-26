@@ -47,7 +47,28 @@ header::before{
     color: white;
     padding: 0;
 }
-
+.dropdown ul li:hover .page{
+    color: #bb9356;
+    border-bottom: 2px solid #bb9356;
+    transition: all 0.4s;
+}
+.dropdown ul .home-li a:hover{
+    cursor: pointer;
+}
+.dropdown ul li a::before{
+    background-color: #bb9356;
+    /* width: 100%; */
+    position: absolute;
+    transition: all 0.4s;
+    bottom: 35px;
+    height: 2px;
+    background: transparent;
+}
+.dropdown ul .home-li .page:hover{
+    color: #bb9356;
+    border-bottom: 2px solid #bb9356;
+    cursor: pointer;
+}
 .dropdown ul li .page:hover {
     cursor: pointer;
     transition: all 0.3s ease !important;
@@ -55,9 +76,56 @@ header::before{
     border-bottom: 2px solid #bb9356;
 
 }
-
+.interactive .fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 8px;
+}
+.fa-quote-right:before {
+    content: "\f10e";
+}
+.fa-toggle-right:before {
+    content: "\f152";
+}
+.fa-newspaper-o:before {
+    content: "\f1ea";
+}
+.fa-group:before {
+    content: "\f0c0";
+}
+.fa-dot-circle-o:before {
+    content: "\f192";
+}
+.interactive{
+    color: #bb9356 !important;
+    cursor: default;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: none;
+    padding-left: 0;
+    transition: all 0.35s;
+    text-transform: capitalize;
+    line-height: 40px;
+    padding: 0;
+    margin: 0 25px;
+    font-size: 14px !important;
+}
 .home-li:hover .home-content{
     display: block;
+}
+.home-contenttt{
+    display: block;
+    float: right;
+    margin-right: -80px !important;
+    color: #7f7f7f;
+    margin-top: -40px;
+}
+header .home-content .slider:hover .home-contenttt{
+    display: block !important;
 }
 /* DROPDOWN */
 header  .home-content{
