@@ -2018,17 +2018,17 @@ vertical-align: middle;
 #galery {
     background: url('assets/img/pagegalery.jpg') 50% 0 no-repeat fixed;
 }
-#menugallery ul{
+#gallerysection ul{
     padding-left: 0;
     margin-left: -5px;
     list-style: none;
 }
-#menugallery ul li{
+#gallerysection ul li{
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
 }
-#menugallery ul li a{
+#gallerysection ul li a{
     color: #333333;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -2041,7 +2041,7 @@ vertical-align: middle;
     transition: all 0.3s ease;
     text-decoration: none;
 }
-#menugallery ul li a::after{
+#gallerysection ul li a::after{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -2050,21 +2050,22 @@ vertical-align: middle;
     background-color: #bb9356;
     transition: all .3s linear;
 }
-#menugallery ul li a:hover{
+#gallerysection ul li a:hover{
     color: #bb9356;
     border-bottom: 2px solid #bb9356 ;
 }
-#menugallery .portfolio-img{
+#gallerysection .portfolio-img{
     position: relative;
     overflow: hidden;
     text-align: center;
 }
-#menugallery .portfolio-img img{
+#gallerysection .portfolio-img img{
     max-width: 100%;
     height: auto;
+    transition: all 0.3s ease;
     vertical-align: middle;
 }
-#menugallery .btn{
+#gallerysection .btn{
     color: #222222;
     border: 2px solid #222222;
     font-family: 'Poppins', sans-serif;
@@ -2081,8 +2082,137 @@ vertical-align: middle;
     letter-spacing: 0.28px;
     border-radius: 50px;
 }
-#menugallery .btn:hover{
+#gallerysection .portfolio-item{
+    transition: all 0.35s ease !important;
+}
+#gallerysection .btn:hover{
     color: #ffffff;
     background-color: #222222;
     border-color: #222222;
+}
+#gallerysection .portfolio-item:hover .portfolio-hover{
+    display: block;
+}
+#gallerysection .portfolio-item:hover .portfolio-hover .portfolio-action{
+    transform: scale(1) !important;
+}
+#gallerysection .portfolio-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    height: 100%;
+    padding: 25px;
+}
+#gallerysection .portfolio-hover .portfolio-action{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.9);
+    text-align: center;
+    transition: all 0.35s !important;
+}
+#gallerysection .portfolio-hover .pos-vertical-center{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+#gallerysection .portfolio-hover .portfolio-zoom{
+    margin-bottom: 30px;
+}
+#gallerysection .portfolio-zoom .img-gallery-item{
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    width: 20px;
+    height: 20px;
+}
+#gallerysection .portfolio-zoom .img-gallery-item::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 10px;
+    width: 20px;
+    height: 1px;
+    background-color: #ffffff;
+}
+#gallerysection .portfolio-zoom .img-gallery-item::after{
+        position: absolute;
+        content: "";
+        left: 10px;
+        top: 0;
+        width: 1px;
+        box-sizing: border-box;
+        height: 20px;
+        background-color: #ffffff;
+}
+/* CONTACT PAGE */
+#contact {
+    background: url('assets/img/contactpage.jpg') 50% 0 no-repeat fixed;
+}
+#contact-form .contact-desc{
+    margin-bottom: 40px;
+}
+#contact-form .form-container .contact-desc p{
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+#contact-form .contact-row .contactt{
+    float: left;
+}
+#contact-form .form-container .contact-info h3 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 23px;
+}
+#contact-form .form-container .contact-info p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 0;
+    color: #a5a5a5;
+    margin: 0 0 10px;
+}
+#contact-form .contact-row{
+    margin-bottom: 30px !important;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#contact-form .contact-info a{
+    color: #bb9356;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+#contact-form .col-6 input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 49px;
+    border: 1px solid #eee;
+    background: transparent;
+    padding-left: 18px;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    height: 49px;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#contact-form .col-6 input:focus{
+    border-color: #bb9356 !important;
+    box-shadow: none;
+}
+#contact-form .col-6 input:hover{
+    border-color: #bb9356 !important;
 }
