@@ -315,7 +315,6 @@ header .home-content .slider:hover .home-contentt {
     padding-top: 110px;
     padding-bottom: 110px;
 }
-
 .filter ul li .page:hover {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -858,6 +857,7 @@ footer .fa {
 #team .pos-vertical-center {
     text-align: center;
     margin-top: 50%;
+    transform: perspective(1px) translateY(-50%);
 }
 
 #team .member:hover .member-overlay {
@@ -871,17 +871,29 @@ footer .fa {
 #team .fa .fa-facebook:before {
     content: "\f09a";
 }
-
-#team .member-hover a {
-    text-decoration: none;
+#team .member-hover {
+        border-radius: 2px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.35s;
+        opacity: 0;
 }
-
+#team  .fa-facebook:before {
+    content: "\f09a";
+}
+#team .fa-twitter:before {
+    content: "\f099";
+}
+#team .fa-instagram:before {
+    content: "\f16d";
+}
 #team .member-hover a {
     height: 42px;
     width: 42px;
     line-height: 42px;
     background-color: #bb9356;
     color: #ffffff;
+    text-decoration: none;
     font-size: 14px;
     text-align: center;
     font-weight: 400;
@@ -889,6 +901,13 @@ footer .fa {
     display: inline-block;
 }
 
+#team .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
 #team .member-hover .member-social a:hover {
     background-color: white;
     cursor: pointer;
