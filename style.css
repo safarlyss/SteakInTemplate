@@ -1801,7 +1801,199 @@ footer .fa {
     background-color: #ffffff;
     border-color: #ffffff;
 }
-
+#testimoniall{
+    background: url('assets/img/testimonialbg.jpg') 50% 0 no-repeat fixed;
+}
+#testimoniall .heading{
+    margin-bottom: 50px !important;
+    margin-top: 100px !important;
+}
+#testimoniall .heading .heading-subtitle{
+    color: #bb9356;
+    font-family: 'Ruthie', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+#testimoniall .heading .heading-title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.divider--shape-13 {
+    width: 100%;
+    height: 16px;
+    background: url('assets/img/shape-13.png') center no-repeat;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+#testimoniall .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+}
+#testimoniall .testimonial-container {
+    padding-bottom: 11px;
+    position: relative;
+}
+#testimoniall .testimonial-panel {
+    background-color: #ffffff;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+#testimoniall .testimonial-bordered {
+    border: 1px dashed #c69c6d;
+    padding: 28px;
+}
+#testimoniall .testimonial-rating {
+    margin-bottom: 20px;
+}
+#testimoniall .testimonial-rating i {
+    color: #ffc80a;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+#testimoniall .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+}
+#testimoniall .fa-star:before {
+    content: "\f005";
+}
+#testimoniall .testimonial-panel p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #a5a5a5;
+    line-height: 25px;
+    margin-bottom: 23px;
+}
+#testimoniall .testimonial-img {
+    margin-bottom: 22px;
+}
+#testimoniall .testimonial-img img {
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+#testimoniall .testimonial-author h4 {
+    font-size: 13px;
+    line-height: 1.3;
+    color: #bb9356;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 0;
+}
+#testimoniall .owl{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#testimoniall .owl-dot{
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    user-select: none;
+}
+#testimoniall .owl-dot span{
+    background-color: #fff;
+    border-color: #fff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin: 0 4px;
+    background: #d6d6d6;
+    display: block;
+    transition: opacity 200ms ease;
+}
+#testimoniall .owl .active span{
+    box-shadow: 0 0 0 2px #fff;
+    border-color: #333;
+    background-color: #fff;
+    border-width: 3px;
+    height: 10px;
+    display: block;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: #869791;
+    transition: opacity 200ms ease;
+    margin: 0 4px;
+}
+#blogg{
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+#blogg .heading .heading-subtitle {
+    color: #bb9356;
+    font-family: 'Ruthie', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+#blogg .entry-meta {
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+#blogg .entry-date {
+    color: #686868;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+#blogg .entry-meta a{
+    transition: all 0.3s ease;
+    color: #bb9356;
+    text-decoration: none;
+}
+#blogg .entry-title {
+    margin-bottom: 20px;
+}
+#blogg .entry-title h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+#blogg .entry-title h4 a {
+    color: #222222;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+#blogg  .entry-img {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+#blogg .entry-img img {
+    max-width: 100%;
+    height: auto;
+}
+#blogg .entry-bio {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a5a5a5;
+    line-height: 23px;
+}
 /* #home .tp-leftarrow{
     height: 108px;
     top: 50%;
