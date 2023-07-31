@@ -895,7 +895,7 @@ footer .fa {
 }
 
 #team .member-hover .member-social a:hover i {
-    color: #bb9356;
+    color: #bb9356 ;
 }
 
 #team .fa {
@@ -2292,56 +2292,32 @@ footer .fa {
 #contact {
     background: url('assets/img/contactpage.jpg') 50% 0 no-repeat fixed;
 }
-
-#contact-form .contact-desc {
+#contact-form {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    overflow: hidden;
+}
+#contact-form .contact-desc{
     margin-bottom: 40px;
 }
-
-#contact-form .form-container .contact-desc p {
+#contact-form .contact-desc p {
     color: #a5a5a5;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 0;
 }
-
-#contact-form .contact-row .contactt {
-    float: left;
-}
-
-#contact-form .form-container .contact-info h3 {
+#contact-form .contact-info h3 {
     font-size: 17px;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 23px;
+    margin-left: -10px !important;
+    float: left;
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 28px;
 }
-
-#contact-form .form-container .contact-info p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    margin-bottom: 0;
-    color: #a5a5a5;
-    margin: 0 0 10px;
-}
-
-#contact-form .contact-row {
-    margin-bottom: 30px !important;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-#contact-form .contact-info a {
-    color: #bb9356;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    text-transform: uppercase;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-#contact-form .col-6 input {
+#contact-form .form-control{
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -2351,24 +2327,93 @@ footer .fa {
     padding-left: 18px;
     margin-bottom: 30px;
     position: relative;
-    border-radius: 2px;
     box-shadow: none;
+    height: 49px;    
     display: block;
     width: 100%;
+    width: 230px;
     padding: 6px 12px;
-    height: 49px;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    color: #555;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-radius: 2px;
 }
-
-#contact-form .col-6 input:focus {
-    border-color: #bb9356 !important;
+#contact-form input::selection {
+    background-color: #bb9356 !important;
+    color: #ffffff;
+    text-shadow: none;
+}
+#contact-form .form-control:focus {
+    border-color: #bb9356;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
-
-#contact-form .col-6 input:hover {
-    border-color: #bb9356 !important;
+#contact-form .contact-info p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    /* margin-bottom: 0; */
+    margin-left: -10px;
+    float: left !important;
+    /* margin: 0 0 10px; */
+    color: #a5a5a5;
 }
-
+#contact-form .contact-info a{
+    color: #bb9356;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: -120px;
+    /* margin-bottom: -100px; */
+    float: left !important;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+#contact-form  .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #1c1c1c;
+    transition: all 0.3s ease;
+    color: #ffffff !important;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.fa-facebook:before {
+    content: "\f09a";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+.fa-instagram:before {
+    content: "\f16d";
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+#contact-form .social-icons a i{
+    transition: all 0.3s ease-in-out;
+}
+#contact-form .social-icons a:hover {
+    color: #ffffff;
+    background-color: #bb9356;
+}
+#contact-form .social-icons a:focus {
+    outline-offset: -2px;
+}
+#contact-form .social-icons a:hover i {
+    transform: rotate(360deg);
+}
 /* MENU CLASSIC */
 #menu-classic {
     background: url('assets/img/menu-classic.jpg') 50% 0 no-repeat fixed;
